@@ -1,19 +1,8 @@
-# Projeto Git Simulation
-
-Este projeto é uma simulação básica do sistema de controle de versão Git, criada para fins educacionais. Inclui  funções básicas como criar commits, criar branches, fazer checkout e mesclar branches.
-
-
-## Requisitos
-
-- GCC (GNU Compiler Collection)
-- Make
-
-## Instalação
-
-1. Clone o repositório para sua máquina local:git clone https://github.com/gcunha-campos/projeto-Tecnicas.gitGit Simulation Project
+Git Simulation Project
 ======================
 
 This project is a simulation of a version control system similar to Git, implemented in C. It includes basic functionalities such as creating branches, making commits, merging branches, checking out branches, pulling changes, and pushing changes. The project consists of a server and a client that communicate via sockets.
+
 
 Features
 --------

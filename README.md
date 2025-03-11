@@ -1,5 +1,5 @@
-Git Simulation Project
-======================
+Git Simulation 
+==============
 
 This project is a simulation of a version control system similar to Git, implemented in C. It includes basic functionalities such as creating branches, making commits, merging branches, checking out branches, pulling changes, and pushing changes. The project consists of a server and a client that communicate via sockets.
 
@@ -18,6 +18,10 @@ Features
 -   **Pull**: Synchronize the local branch with the remote branch.
 
 -   **Push**: Send local changes to the remote branch.
+
+-   **Log**: View the commit history of the current branch.
+
+
 
 Project Structure
 -----------------
@@ -41,19 +45,46 @@ How to Run
 
 -   Unix-like operating system (Linux, macOS, etc.).
 
-### Compilation
+### Step-by-Step Guide
 
-1.  Navigate to the project directory:
+#### 1\. **Clone the Repository**
 
-    ```bash
-    cd Projeto-Tecnicas/git-simulation-vs-FINAL/src
+First, clone the project repository to your local environment:
 
-2.  Compile the server and client:
+```bash
+git clone https://github.com/viniciusbgs/Git_Simulation.git
+```
 
-    ```bash
+#### 2\. **Navigate to the Project Folder**
 
-    gcc -o server server.c data_structures.c git_commands.c tabelahash.c
-    gcc -o client client.c data_structures.c git_commands.c tabelahash.c
+After cloning the repository, navigate to the project folder:
+
+```bash
+cd Git_Simulation/src
+```
+
+
+#### 3\. **Compile the Project**
+
+Compile the project using `make` or manually with `gcc`:
+
+**Option 1: Using `make` (if a Makefile is available):**
+
+```bash
+make
+```
+
+**Option 2: Manual compilation with `gcc`:**
+
+```bash
+
+gcc -o server server.c data_structures.c git_commands.c tabelahash.c
+gcc -o client client.c data_structures.c git_commands.c tabelahash.c
+```
+
+This will generate two executables: `server` and `client`.
+
+
 
 ### Execution
 
@@ -84,6 +115,10 @@ Available Commands in the Client
 
 -   **`git push`**: Send local changes to the remote branch.
 
+-   **`git log`**: View the commit history of the current branch.
+
+
+
 -   **`exit`**: Exit the client.
 
 Example Usage
@@ -94,6 +129,12 @@ Example Usage
     ```bash
     $ git branch feature
 
+2.  Switch to the new branch:
+   
+   ```bash
+   $ git checkout feature
+   ```
+ 
 2.  Make a commit:
 
     ```bash
@@ -118,15 +159,9 @@ Example Usage
 
     ```bash
     $ git push
+
+7. View log
+
+    ```bash
+    $ git log
     
-2. Navegue até a pasta do projeto:
-cd Git_simulation/src
-
-3. Compile o projeto usando o comando `make`:
-make
-
-
-
-
-
-
